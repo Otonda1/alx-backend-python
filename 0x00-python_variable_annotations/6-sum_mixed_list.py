@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """
-return sum of a mixed
-list as a float
+Summation of a mixed list of ints and floats
 """
 
-from typing import List, Union
+from typing import Union, List
 
 
 def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
-    """Returns the sum of the mixed list elements as a float."""
-    return sum(mxd_lst)
-
+    """Summation of mixed data types"""
+    sum: float = 0.0
+    for num in mxd_lst:
+        sum += num
+    return sum
