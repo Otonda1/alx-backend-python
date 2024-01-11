@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """
-A type annoted function
+Module that return tuple from string and int/float inputs
 """
 
-from typing import Union, Tuple
+from typing import Union, List, Tuple
+
 
 def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
-    """tuple from a str and int input"""
-    return k, v * v
-
+    """Tuple from string and integer/float input"""
+    square: float = v * v
+    return k, square
