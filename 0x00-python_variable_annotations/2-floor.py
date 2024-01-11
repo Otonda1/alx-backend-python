@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """
-A function that returns a floor 
+Type-annotated function to find floors of float inputs
 """
 
 
 def floor(n: float) -> int:
-    """return a floor int"""
+    """Turn float into integer"""
     return int(n)
-
