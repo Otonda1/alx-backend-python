@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 """
-a type annoted function
+Type-annotated function that returns a function
 """
 
 from typing import Callable
 
 
 def make_multiplier(multiplier: float) -> Callable[[float], float]:
-    """callable"""
-    def mul(fl: float):
-        multiple: float = multiplier * multiplier
-        return multiple
-    return mul
+    """Returns function that multiplies floats"""
+    def mult(num: float):
+        return num * multiplier
+    return mult
