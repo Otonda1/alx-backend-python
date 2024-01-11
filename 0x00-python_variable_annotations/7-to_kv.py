@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 """
-a type-annoted function
+A type annoted function
 """
 
-from typing import Tuple, Union
+from typing import Union, Tuple
 
+def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
+    """tuple from a str and int input"""
+    return k, v * v
 
-def to_kv(k: str, v: Union[int, float]) -> Tuple[Union[str, int]]:
-    """returns a tuple"""
-    tupleresult: Tuple[Union[int, float]] = (k, v*v)
-    return tupleresult
