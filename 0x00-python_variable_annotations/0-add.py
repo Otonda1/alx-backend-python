@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """
-Type annoted function for adding floats
+Type-annotated function for adding floats
 """
 
 
 def add(a: float, b: float) -> float:
-    """Returns a float"""
-    return a+b
-
+    """Adds two floats"""
+    return a + b
